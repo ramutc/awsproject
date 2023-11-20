@@ -54,16 +54,3 @@ client = QLMail.Client(
 # After the object Client has been instantiated with our required variables, we can send the email
 client.send()
 ```
-
-## Future Enhancements
-
-This repo was created because I could not immediately find any solutions available online that integrate with AWS SES and Lambda. Rather than copy and paste the same email code to every function, it seemed like a better solution to create a Layer that can be reused for all Lambda functions requiring email functionality. Therefore, this project is really just a proof of concept.
-
-If this is developed further, future enhancements may include:
-
-1. Email Queue Implementation so that bulk emails can be sent in batches.
-2. Refactoring Method Names
-3. Better logging features
-4. Anything else that comes to mind
-
-Please feel free to contact me for any comments/suggestions: cy.campos1983@gmail.com
